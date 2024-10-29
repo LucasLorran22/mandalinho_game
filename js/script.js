@@ -1,12 +1,12 @@
-const mario = document.querySelector('.mandalinha');
+const mandalinha = document.querySelector('.mandalinha');
 const pipe = document.querySelector('.pipe');
 
 const jump = () => {
-    mario.classList.add('jump');
+    mandalinha.classList.add('jump');
 
     setTimeout(() => {
 
-        mario.classList.remove('jump');
+        mandalinha.classList.remove('jump');
 
         }, 500);
 }
@@ -17,22 +17,22 @@ const loop = setInterval(() => {
 
 
     const pipePosition = pipe.offsetLeft;
-    const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
+    const mandalinhaPosition = +window.getComputedStyle(mandalinha).bottom.replace('px', '');
 
-    console.log(marioPosition);
+    console.log(mandalinhaPosition);
 
-    if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
+    if (pipePosition <= 120 && pipePosition > 0 && mandalinhaPosition < 80) {
 
         pipe.style.animation = 'none';
         pipe.style.left = `${pipePosition}px`;   
 
-        mario.style.animation = 'none';
-        mario.style.bottom = `${marioPosition}px`;   
+        mandalinha.style.animation = 'none';
+        mandalinha.style.bottom = `${mandalinhaPosition}px`;   
 
-        mario.src = '.images/game-over.png';
-        mario.style.width = '210px'
-        mario.style.marginLeft = '50px'
-        mario.style.zIndex = '10';
+        mandalinha.src = 'images/game-over.png';
+        mandalinha.style.width = '210px'
+        mandalinha.style.marginLeft = '50px'
+        mandalinha.style.zIndex = '10';
 
         clearInterval(loop);
     }
