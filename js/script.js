@@ -1,4 +1,4 @@
-const mario = document.querySelector('.mario');
+const mario = document.querySelector('.mandalinha');
 const pipe = document.querySelector('.pipe');
 
 const jump = () => {
@@ -30,8 +30,9 @@ const loop = setInterval(() => {
         mario.style.bottom = `${marioPosition}px`;   
 
         mario.src = '.images/game-over.png';
-        mario.style.width = '75px'
+        mario.style.width = '210px'
         mario.style.marginLeft = '50px'
+        mario.style.zIndex = '10';
 
         clearInterval(loop);
     }
