@@ -1,6 +1,7 @@
 const mandalinho = document.querySelector('.mandalinho');
 const pipe = document.querySelector('.pipe');
 const scoreDisplay = document.getElementById('score');
+const misterCleiImage = document.getElementById('misterCleiImage');
 let score = 0;
 let scored = false; 
 
@@ -32,8 +33,14 @@ const loop = setInterval(() => {
         score++;
         scoreDisplay.textContent = score;
         scored = true; 
+
+        if (score === 10) {
+            misterCleiImage.classList.remove('hidden');
+            setTimeout(() => {
+                misterCleiImage.classList.add('hidden');
+            }, 2000); // Exibir por 2 segundos
+        }
     } else if (pipePosition >= 120) {
-        
         scored = false;
     }
 }, 10);

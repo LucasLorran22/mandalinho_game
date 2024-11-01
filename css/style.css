@@ -43,7 +43,21 @@
     top: 10px;
     left: 10px;
     font-size: 24px;
-    color: #fff; /* Cor do texto */
+    color: #fff;
+}
+
+.misterClei{
+    position: fixed; 
+    bottom: 20px;    
+    right: 5px;     
+    width: 600px;   
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.hidden {
+    opacity: 0;
 }
 
 @keyframes pipe-animation {
