@@ -16,9 +16,9 @@
 <ol>
   <li>Abra o terminal ou prompt de comando no seu computador.</li>
   <li>Clone o repositório usando o comando abaixo:</li>
-  <pre><code>git clone https://github.com/LCNasimento/jogoMariojs.git</code></pre>
+  <pre><code>git clone https://github.com/LucasLorran22/mandalinho_game.git</code></pre>
   <li>Navegue até o diretório do projeto:</li>
-  <pre><code>cd jogoMariojs</code></pre>
+  <pre><code>cd mandalinho_game</code></pre>
   <li>Abra o arquivo <code>index.html</code> no seu navegador web.</li>
 </ol>
 
@@ -32,9 +32,4 @@
   <li>CSS</li>
   <li>JavaScript</li>
 </ul>
-
-<h2>📄 Licença</h2>
-<p>
-  Este projeto está licenciado sob a <a href="LICENSE">MIT License</a>.
-</p>
 
